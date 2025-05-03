@@ -1,0 +1,43 @@
+{
+  "name": "ecommerce",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bq-t/ecommerce.git"
+  },
+  "keywords": [],
+  "author": "bq-t",
+  "license": "ISC",
+  "scripts": {
+    "prepare": "husky",
+    "release": "nx release",
+    "dev:backend": "cd packages/api && pnpm dev",
+    "dev:frontend": "cd packages/client && pnpm dev",
+    "build:backend": "cd packages/api && pnpm build",
+    "build:frontend": "cd packages/client && pnpm build"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@nx/eslint": "20.8.1",
+    "@nx/js": "^20.8.1",
+    "@nx/nuxt": "20.8.1",
+    "@nx/vite": "20.8.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.26.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "nuxt": "^3.10.0",
+    "nx": "20.8.1",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "nx affected:lint --fix",
+      "prettier --write"
+    ]
+  },
+  "packageManager": "pnpm@9.12.2"
+}

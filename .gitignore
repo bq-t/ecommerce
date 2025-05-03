@@ -1,0 +1,30 @@
+############################
+# Misc.
+############################
+
+.idea
+
+############################
+# Node.js
+############################
+
+node_modules
+.node_history
+
+############################
+# Package managers
+############################
+
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+
+.nx/cache
+.nx/workspace-data
