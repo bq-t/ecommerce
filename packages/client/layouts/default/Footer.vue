@@ -3,14 +3,19 @@
     <div class="py-24 px-40 w-full max-w-[90rem] mx-auto">
       <div class="flex">
         <div class="w-full max-w-sm mr-28">
-          <u-link class="text-white" to="/"> Logotype </u-link>
+          <u-link class="text-white" to="/">
+            <nuxt-img
+              :src="footerData.logotype.url"
+              :alt="footerData.logotype.alternativeText"
+            />
+          </u-link>
           <div class="text-[#CFCFCF] text-sm mt-6">
-            {{ description }}
+            {{ footerData.description }}
           </div>
         </div>
         <div class="grid grid-cols-2 gap-8 w-full">
           <div
-            v-for="(linkGroup, linkGroupIndex) in linkGroups"
+            v-for="(linkGroup, linkGroupIndex) in footerData.linkGroups"
             :key="linkGroupIndex"
             class="flex flex-col gap-y-2"
           >
@@ -32,11 +37,11 @@
       </div>
       <div class="flex gap-x-9 mt-6">
         <u-button
-          v-for="(social, socialIndex) in socials"
+          v-for="(social, socialIndex) in footerData.socials"
           :key="socialIndex"
           target="_blank"
           size="sm"
-          :icon="social.icon"
+          :icon="social.icon.iconName"
           :to="social.url"
           :ui="{ base: 'p-0' }"
         />
@@ -46,94 +51,8 @@
 </template>
 
 <script lang="ts" setup>
-const description = computed(
-  () =>
-    'We are a residential interior design firm located in Portland.Our boutique-studio offers more than',
-)
+import type { GlobalFooter } from '@/types/models/single/global'
 
-const linkGroups = computed(() => [
-  {
-    label: 'Services',
-    links: [
-      {
-        label: 'Bonus program',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Gift cards',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Credit and payment',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Service contracts',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Non-cash account',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Payment',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-    ],
-  },
-  {
-    label: 'Assistance to the buyer',
-    links: [
-      {
-        label: 'Find an order',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Terms of delivery',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Exchange and return of goods',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Guarantee',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Frequently asked questions',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-      {
-        label: 'Terms of use of the site',
-        url: 'https://google.com',
-        target: '_blank',
-      },
-    ],
-  },
-])
-
-const socials = computed(() => [
-  {
-    icon: 'mdi:twitter',
-    url: 'https://google.com',
-    target: '_blank',
-  },
-  {
-    icon: 'mdi:facebook',
-    url: 'https://google.com',
-    target: '_blank',
-  },
-])
+const globalStore = useGlobalStore()
+const footerData: GlobalFooter = globalStore.footerData
 </script>
