@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.header",
+      "required": true
+    },
+    "navbar": {
+      "displayName": "Navbar",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.navbar",
+      "required": true
+    },
+    "footer": {
+      "displayName": "Footer",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.footer",
+      "required": true
+    },
+    "settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "global.settings",
+      "required": true
+    }
+  }
+}

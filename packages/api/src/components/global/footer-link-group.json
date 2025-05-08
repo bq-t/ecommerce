@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_global_footer_link_groups",
+  "info": {
+    "displayName": "FooterLinkGroup",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.link",
+      "required": true
+    }
+  }
+}

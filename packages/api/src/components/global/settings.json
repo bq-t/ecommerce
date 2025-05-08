@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_global_settings",
+  "info": {
+    "displayName": "Settings",
+    "icon": "connector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "appName": {
+      "type": "string",
+      "required": true
+    },
+    "features": {
+      "displayName": "SettingsFeatures",
+      "type": "component",
+      "repeatable": false,
+      "component": "global.settings-features",
+      "required": true
+    }
+  }
+}
