@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_global_settings_features",
+  "info": {
+    "displayName": "SettingsFeatures",
+    "icon": "connector"
+  },
+  "options": {},
+  "attributes": {
+    "favorites": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "cart": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "authorization": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logotype": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": false
+    },
+    "linkGroups": {
+      "displayName": "FooterLinkGroup",
+      "type": "component",
+      "repeatable": true,
+      "component": "global.footer-link-group",
+      "required": true
+    },
+    "socials": {
+      "displayName": "Social",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  --color-primary: var(--ui-primary);
+}
+
+:root {
+  --ui-primary: var(--ui-black);
+  --ui-black: black;
+  --ui-white: white;
+}
+
+#__nuxt {
+  @apply flex flex-col min-h-screen;
+}
+#__nuxt > main {
+  @apply flex-1;
+}
