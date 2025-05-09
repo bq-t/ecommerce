@@ -3,6 +3,9 @@
 
 @theme {
   --color-primary: var(--ui-primary);
+
+  --font-inter: 'Inter', sans-serif;
+  --default-font-family: var(--font-inter);
 }
 
 :root {
