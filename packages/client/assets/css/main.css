@@ -12,6 +12,8 @@
   --ui-primary: var(--ui-black);
   --ui-black: black;
   --ui-white: white;
+
+  --ui-text-muted: #CFCFCF;
 }
 
 #__nuxt {
