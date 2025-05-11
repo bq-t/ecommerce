@@ -1,3 +1,14 @@
+## 0.1.1 (2025-05-11)
+
+### Style updates
+
+- **client:** update text-muted color in application theme ([6ad2e66](https://github.com/bq-t/ecommerce/commit/6ad2e66))
+- **client:** set default font to inter ([ed3b8f8](https://github.com/bq-t/ecommerce/commit/ed3b8f8))
+
+### ❤️ Thank You
+
+- bq-t
+
 ## 0.1.0 (2025-05-08)
 
 ### 🚀 Features
