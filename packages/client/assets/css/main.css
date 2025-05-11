@@ -3,12 +3,17 @@
 
 @theme {
   --color-primary: var(--ui-primary);
+
+  --font-inter: 'Inter', sans-serif;
+  --default-font-family: var(--font-inter);
 }
 
 :root {
   --ui-primary: var(--ui-black);
   --ui-black: black;
   --ui-white: white;
+
+  --ui-text-muted: #CFCFCF;
 }
 
 #__nuxt {

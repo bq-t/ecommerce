@@ -9,7 +9,7 @@
               :alt="footerData.logotype.alternativeText"
             />
           </u-link>
-          <div class="text-[#CFCFCF] text-sm mt-6">
+          <div class="text-muted text-sm mt-6">
             {{ footerData.description }}
           </div>
         </div>
@@ -25,7 +25,7 @@
             <u-link
               v-for="(link, linkIndex) in linkGroup.links"
               :key="linkIndex"
-              class="text-[#CFCFCF] text-sm"
+              class="text-muted text-sm"
               :to="link.url"
               :target="link.target"
               raw
