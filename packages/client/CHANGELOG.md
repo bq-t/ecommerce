@@ -1,3 +1,13 @@
+## 0.2.0 (2025-05-11)
+
+### 🚀 Features
+
+- **client:** add useVariants composable for components theming ([6620601](https://github.com/bq-t/ecommerce/commit/6620601))
+
+### ❤️ Thank You
+
+- bq-t
+
 ## 0.1.1 (2025-05-11)
 
 ### Style updates
